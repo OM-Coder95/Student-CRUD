@@ -20,7 +20,7 @@ let stdArr = [
     email: "rahul@gmail.com",
   },
   {
-    id: "112",
+    id: "113",
     fname: "Mahesh",
     lname: "Barbade",
     contact: 8838485832,
@@ -36,14 +36,14 @@ function showOnUI(arr) {
 
   arr.forEach((ele, i) => {
     result += `
-                                    <tr id=${ele.id}>
+                                    <tr id="${ele.id}">
                                     <td>${i + 1}</td>
                                     <td>${ele.fname}</td>
                                     <td>${ele.lname}</td>
                                     <td>${ele.contact}</td>
                                     <td>${ele.email}</td>
-                                    <td><i <i onclick = "editStd(this)" data-edit-id = ${ele.id} class="fa-solid fa-pen-to-square fa-2x text-primary" role="button"></i></td>
-                                    <td><i onclick = "removeStd(this)" data-remove-id = ${ele.id} class="fa-solid fa-trash-can fa-2x text-danger" role="button" ></i></td>
+                                    <td><i onclick = "editStd(this)" data-edit-id = "${ele.id}" class="fa-solid fa-pen-to-square fa-2x text-primary" role="button"></i></td>
+                                    <td><i onclick = "removeStd(this)" data-remove-id = "${ele.id}" class="fa-solid fa-trash-can fa-2x text-danger" role="button" ></i></td>
                                 </tr> `;
   });
 
@@ -65,8 +65,8 @@ function createTr(obj) {
                                     <td>${obj.lname}</td>
                                     <td>${obj.contact}</td>
                                     <td>${obj.email}</td>
-                                    <td><i onclick = "editStd(this)" data-edit-id = ${obj.id} class="fa-solid fa-pen-to-square fa-2x text-primary" role="button"></i></td>
-                                    <td><i onclick = "removeStd(this)" data-remove-id = ${obj.id} class="fa-solid fa-trash-can fa-2x text-danger" role="button"></i></td>
+                                    <td><i onclick = "editStd(this)" data-edit-id = "${obj.id}" class="fa-solid fa-pen-to-square fa-2x text-primary" role="button"></i></td>
+                                    <td><i onclick = "removeStd(this)" data-remove-id = "${obj.id}" class="fa-solid fa-trash-can fa-2x text-danger" role="button"></i></td>
     `;
 
   stdContainer.append(tr);
