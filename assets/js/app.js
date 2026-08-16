@@ -65,8 +65,8 @@ function createTr(obj) {
                                     <td>${obj.lname}</td>
                                     <td>${obj.contact}</td>
                                     <td>${obj.email}</td>
-                                    <td><i onclick = "editStd(this)" data-edit-id = ${tr.id} class="fa-solid fa-pen-to-square fa-2x text-primary" role="button"></i></td>
-                                    <td><i onclick = "removeStd(this)" data-remove-id = ${tr.id} class="fa-solid fa-trash-can fa-2x text-danger" role="button"></i></td>
+                                    <td><i onclick = "editStd(this)" data-edit-id = ${obj.id} class="fa-solid fa-pen-to-square fa-2x text-primary" role="button"></i></td>
+                                    <td><i onclick = "removeStd(this)" data-remove-id = ${obj.id} class="fa-solid fa-trash-can fa-2x text-danger" role="button"></i></td>
     `;
 
   stdContainer.append(tr);
