@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #f5f6fa;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-control {
+    border-radius: 6px;
+}
+.form-control:focus {
+    border-color: #007bff;
+}
+
+.btn {
+    border-radius: 6px;
+}
+
+/* Table */
+
+.table {
+    margin-bottom: 0;
+}
+
+.table tbody td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
